@@ -11,7 +11,6 @@ def get_repo_info(repo_url:str):
     r = requests.get(api)
     
     data = r.json()
-
     result = {
         "name":data["name"],
         "description":data["description"],
